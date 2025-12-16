@@ -1,0 +1,16 @@
+@prefix : <https://www.person.com/> .
+@prefix rel: <https://www.perceive.net/schemas/20031015/relationship/> .
+@prefix sch: <https://schema.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+
+
+:Mary
+    a sch:Person;
+    rel:spouseOf :John.
+
+:John
+    a sch:Person;
+    sch:worksFor dbr:Microsoft.
+
+dbr:Microsoft
+    a dbr:Public_company.

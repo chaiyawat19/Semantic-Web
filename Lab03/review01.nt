@@ -1,0 +1,35 @@
+# Mary_Jane is a Person
+<http://mydomain.com/Mary_Jane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+
+# Mary_Jane has givenName "Mary"
+<http://mydomain.com/Mary_Jane> <http://schema.org/givenName> "Mary"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+# Mary_Jane has familyName "Jane"
+<http://mydomain.com/Mary_Jane> <http://schema.org/familyName>
+"Jane"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+# Mary_Jane has telephone "(344)23243322"
+<http://mydomain.com/Mary_Jane> <http://schema.org/telephone>
+"(344)23243322"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+# Mary_Jane has email "mary@gmail.com"
+<http://mydomain.com/Mary_Jane> <http://schema.org/email>
+"mary@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+# Mary_Jane has birthDate "1966-12-04"
+<http://mydomain.com/Mary_Jane> <http://schema.org/birthDate>
+"1966-12-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+# Mary_Jane has jobTitle "Lecturer"
+<http://mydomain.com/Mary_Jane> <http://schema.org/jobTitle>
+"Lecturer"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+# Mary_Jane has homepage <http://www.myblog.com/mary.html>
+<http://mydomain.com/Mary_Jane> <http://xmlns.com/foaf/0.1/homepage>
+<http://www.myblog.com/mary.html> .
+
+# Mary_Jane worksFor Stanford_University
+<http://mydomain.com/Mary_Jane> <http://schema.org/worksFor> <http://mydomain.com/Stanford_University> .
+
+# Stanford_University is a University
+<http://mydomain.com/Stanford_University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/University> .

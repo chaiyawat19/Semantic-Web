@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dbp: <https://dbpedia.org/property/>.
+@prefix dbo: <https://dbpedia.org/ontology/>.
+@prefix dbr: <https://dbpedia.org/resource/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+dbr:Pluto
+    a dbo:Planet;
+    dbp:mpcName "Pluto (en)";
+    dbp:discoveryDate "1930-02-18"^^xsd:date;
+    dbp:discoveredBy dbr:Clyde_Williams
+.
+
+#dbr:Pluto                     
+# Subject: "ดาวพลูโต" (ใช้ dbr เพราะเป็นชื่อเฉพาะ)
+    # a dbo:Planet;             # Predicate: "เป็น" Object: "ดาวเคราะห์" (ใช้ dbo เพราะเป็น Class)
+    # dbp:mpcName "Pluto (en)"; # Predicate: "มีชื่อ MPC" Object: "Pluto (en)"
+    # dbp:discoveredBy dbr:Clyde_Williams # Predicate: "ถูกค้นพบโดย" Object: "นายไคลด์"
+.
+
+dbr:Clyde_Williams
+    a dbo:Person;
+    dbp:birthDate "1881-05-23"^^xsd:date;
+    dbp:deathDate "1965-01-26"^^xsd:date;
+    dbp:birthPlace dbr:London
+.
+
+dbr:London
+    a dbo:Place;
+    dbp:country dbr:United_Kingdom
+.

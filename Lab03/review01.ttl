@@ -1,0 +1,32 @@
+@prefix :        <http://mydomain.com/> .
+@prefix schema:  <http://schema.org/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dbo:     <http://dbpedia.org/ontology/> . # Using dbo for Dbpedia Ontology
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# ----------------------------------------------------------------------
+# 1. Mary_Jane Resource
+# ----------------------------------------------------------------------
+
+:Mary_Jane 
+    rdf:type schema:Person ;
+    schema:givenName "Mary"^^xsd:string ;
+    schema:familyName "Jane"^^xsd:string ;
+    schema:telephone "(344)23243322"^^xsd:string ;
+    schema:email "mary@gmail.com"^^xsd:string ;
+    schema:birthDate "1966-12-04"^^xsd:date ;
+    schema:jobTitle "Lecturer"^^xsd:string ; # Using schema:jobTitle for occupation
+    foaf:homepage <http://www.myblog.com/mary.html> ;
+    schema:worksFor :Stanford_University . # Object is the URI for the University
+
+# ----------------------------------------------------------------------
+# 2. Stanford_University Resource
+# ----------------------------------------------------------------------
+
+:Stanford_University 
+    a schema:University ; # Or schema:Organization
+    schema:name "Stanford University"^^xsd:string ;
+    dbo:academicStaff "2279"^^xsd:integer ; # Using Dbpedia for academic staff count
+    schema:addressLocality "California"^^xsd:string ; # Using schema:addressLocality for city
+    schema:addressCountry "United States"^^xsd:string .

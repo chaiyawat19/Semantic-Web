@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 3: France (RDFa)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body
+    prefix="schema: http://schema.org/ dbo: http://dbpedia.org/ontology/ foaf: http://xmlns.com/foaf/0.1/ dbr: http://dbpedia.org/resource/ xsd: http://www.w3.org/2001/XMLSchema#">
+
+    <h1>RDFa Review: France</h1>
+
+    <!-- 
+      ใช้งาน Standard Vocabularies:
+      1. schema.org (sch)
+      2. DBpedia Ontology (dbo)
+      3. FOAF (foaf)
+    -->
+
+    <div class="card" typeof="schema:Country" resource="dbr:France">
+
+        <!-- 1. schema:name -->
+        <h2 property="schema:name">France</h2>
+
+        <!-- 2. schema:alternateName -->
+        <h3 property="schema:alternateName" lang="fr">République française</h3>
+
+        <!-- 3. schema:image -->
+        <div style="margin: 20px 0;">
+            <img property="schema:image" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+                alt="Flag of France" width="300">
+        </div>
+
+        <!-- 4. schema:description -->
+        <p property="schema:description">
+            France is a country located primarily in Western Europe. It includes overseas regions and territories in the
+            Americas and the Atlantic, Pacific and Indian Oceans.
+        </p>
+
+        <ul>
+            <!-- 5. dbo:capital (ผสม Vocabulary) -->
+            <li>
+                <span class="label">Capital:</span>
+                <span property="dbo:capital" resource="dbr:Paris">
+                    <a href="https://dbpedia.org/resource/Paris">Paris</a>
+                </span>
+            </li>
+
+            <!-- 6. schema:currency -->
+            <li>
+                <span class="label">Currency:</span>
+                <span property="schema:currency">Euro (EUR)</span>
+            </li>
+
+            <!-- 7. dbo:populationTotal -->
+            <li>
+                <span class="label">Population:</span>
+                <span property="dbo:populationTotal" datatype="xsd:integer">67935660</span> (est.)
+            </li>
+
+            <!-- 8. schema:containedInPlace -->
+            <li>
+                <span class="label">Continent:</span>
+                <span property="schema:containedInPlace" resource="dbr:Europe">Europe</span>
+            </li>
+
+            <!-- 9. foaf:homepage -->
+            <li>
+                <span class="label">Official Website:</span>
+                <a property="foaf:homepage" href="https://www.service-public.fr/">service-public.fr</a>
+            </li>
+        </ul>
+
+        <!-- 10. schema:geo (Nested Entity) -->
+        <div property="schema:geo" typeof="schema:GeoCoordinates">
+            <h3>Coordinates</h3>
+            <ul>
+                <!-- 11. schema:latitude -->
+                <li><span class="label">Latitude:</span> <span property="schema:latitude">46.2276</span></li>
+                <!-- 12. schema:longitude -->
+                <li><span class="label">Longitude:</span> <span property="schema:longitude">2.2137</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 3: Thailand (RDFa)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body prefix="sch: http://schema.org/
+             dbo: http://dbpedia.org/ontology/
+             foaf: http://xmlns.com/foaf/0.1/
+             dbr: http://dbpedia.org/resource/
+             xsd: http://www.w3.org/2001/XMLSchema#">
+    <h1>RDFa Review: Thailand</h1>
+
+    <!-- use Standard Vocabularies -->
+
+    <!-- 1. sch:name -->
+    <div typeof="sch:Country" resource="dbr:Thailand">
+        <h2 property="sch:name">Thailand</h2>
+
+
+        <!-- 2. sch:alternateName -->
+        <h3 property="sch:alternateName" lang="th">ราชอาณาจักรไทย</h3>
+
+        <!-- 3. sch:image -->
+        <div style="margin: 20px 0;">
+            <img property="sch:image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/500px-Flag_of_Thailand.svg.png" alt="ธงประเทศไทย" width="300">
+        </div>
+
+        <!--  4. sch:description -->
+        <p property="sch:description">Thailand is a country located in Southeast Asia. It is bordered by Myanmar to the
+            northwest, Laos to the northeast, Cambodia to the east, and the Gulf of Thailand to the south.</p>
+
+
+        <ul>
+            <!-- 5. dbo:capital -->
+            <li>
+                <span class="label">Capital:</span>
+                <span property="dbo:capital" resource="dbr:Bangkok">
+                    <a href="http://dbpedia.org/resource/Bangkok">Bangkok</a>
+                </span>
+            </li>
+
+            <!-- 6. sch:currency -->
+            <li>
+                <span class="label">Currency:</span>
+                <span property="sch:currency">Baht (THB)</span>
+            </li>
+
+            <!-- 7. dbo:populationTotal -->
+            <li>
+                <span class="label">Population:</span>
+                <span property="dbo:populationTotal" datatype="xsd:integer">67935660</span> (est.)
+            </li>
+
+            <!-- 8. sch:containedInPlace -->
+            <li>
+                <span class="label">Continent:</span>
+                <span property="sch:containedInPlace" resource="dbr:Asia">Asia</span>
+            </li>
+
+            <!-- 9. foaf:homepage -->
+            <li>
+                <span class="label">Official Website:</span>
+                <a property="foaf:homepage" href="https://www.service-public.fr/">service-public.fr</a>
+            </li>
+
+            <!-- 10. sch:geo (Nested Entity) -->
+            <!-- เพื่อสร้างเป็น Node ใหม่ -->
+            <li property="sch:geo" typeof="sch:GeoCoordinates">
+                <span class="label">Coordinates:</span>
+                <ul>
+                    <!-- 11. sch:latitude -->
+                    <li><span class="label">Latitude:</span> <span property="sch:latitude">15.55</span></li>
+                    <!-- 12. sch:longitude -->
+                    <li><span class="label">Longitude:</span> <span property="sch:longitude">100.55</span></li>
+                </ul>
+            </li>
+
+            <!-- 13. sch:officialLanguage -->
+            <li>
+                <span class="label">Official Language:</span>
+                <span property="sch:officialLanguage" resource="dbr:Thai">Thai</span>
+            </li>
+
+            <!-- 14. sch:flag -->
+            <li>
+                <span class="label">Flag:</span>
+                <span property="sch:flag" resource="dbr:Flag_of_Thailand">
+                    <a href="dbr:Flag_of_Thailand">Flag of Thailand</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
