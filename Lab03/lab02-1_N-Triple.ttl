@@ -1,0 +1,11 @@
+<https://dbpedia.org/resource/Detective_Conan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/resource/Manga> .
+<https://dbpedia.org/resource/Detective_Conan> <https://schema.org/author> <https://dbpedia.org/resource/Gosho_Aoyama> .
+<https://dbpedia.org/resource/Detective_Conan> <https://schema.org/publisher> <https://dbpedia.org/resource/Shogakukan> .
+<https://dbpedia.org/resource/Detective_Conan> <https://schema.org/episodes> "1065"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Detective_Conan> <https://schema.org/license> "TMS Entertainment Co., Ltd."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Detective_Conan> <https://schema.org/label> "Case Closed"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Gosho_Aoyama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://dbpedia.org/resource/Gosho_Aoyama> <https://schema.org/name> "Gosho Aoyama"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Gosho_Aoyama> <https://schema.org/birthDate> "1963-06-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://dbpedia.org/resource/Gosho_Aoyama> <https://schema.org/birthPlace> "Hokuei, Japan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Gosho_Aoyama> <https://www.perceive.net/schemas/20031015/relationship/spouseOf> <https://dbpedia.org/resource/Minami_Takayama> .

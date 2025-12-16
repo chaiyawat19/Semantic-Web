@@ -1,0 +1,12 @@
+@prefix ns0: <https://www.perceive.net/schemas/20031015/relationship/> .
+@prefix ns1: <https://schema.org/> .
+
+<https://www.person.com/Mary>
+  a <https://schema.org/Person> ;
+  ns0:spouseOf <https://www.person.com/John> .
+
+<https://www.person.com/John>
+  a <https://schema.org/Person> ;
+  ns1:worksFor <https://dbpedia.org/resource/Microsoft> .
+
+<https://dbpedia.org/resource/Microsoft> a <https://dbpedia.org/resource/Public_company> .
