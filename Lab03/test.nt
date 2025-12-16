@@ -1,4 +1,5 @@
-<https://dbpedia.org/resource/Pluto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/ontology/Planet> .
-<https://dbpedia.org/resource/Pluto> <https://dbpedia.org/property/mpcName> "Pluto (en)" .
-<https://dbpedia.org/resource/Pluto> <https://dbpedia.org/property/discoveryDate> "1930-02-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://dbpedia.org/resource/Pluto> <https://dbpedia.org/property/discoveredBy> <https://dbpedia.org/resource/Clyde_Williams> .
+<https://www.person.com/Mary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://www.person.com/Mary> <https://www.perceive.net/schemas/20031015/relationship/spouseOf> <https://www.person.com/John> .
+<https://www.person.com/John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://www.person.com/John> <https://schema.org/worksFor> <https://dbpedia.org/resource/Microsoft> .
+<https://dbpedia.org/resource/Microsoft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/resource/Public_company> .

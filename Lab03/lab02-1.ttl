@@ -1,0 +1,26 @@
+
+@prefix schema: <https://schema.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rel: <https://www.perceive.net/schemas/20031015/relationship/> . #foaf
+
+
+dbr:Detective_Conan
+    a dbr:Manga;
+    schema:author dbr:Gosho_Aoyama;
+    schema:publisher dbr:Shogakukan;
+    schema:episodes "1065"^^xsd:string;
+    schema:license "TMS Entertainment Co., Ltd."^^xsd:string;
+    schema:label "Case Closed"^^xsd:string.
+
+
+dbr:Gosho_Aoyama
+    a schema:Person;
+    schema:name "Gosho Aoyama"^^xsd:string;
+    schema:birthDate "1963-06-21"^^xsd:date;
+    schema:birthPlace "Hokuei, Japan"^^xsd:string;
+    rel:spouseOf dbr:Minami_Takayama.
+
+
+    
