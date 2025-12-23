@@ -1,0 +1,25 @@
+{
+    "@context": {
+        "schema": "https://schema.org/",
+        "mydomain": "https://www.mydomain.com/"
+    },
+    "@type": "schema:Book",
+    "@id": "mydomain:1401200095",
+    "schema:genre": "Comics & Graphic",
+    "schema:isbn": "1401200095",
+    "schema:name": "The Divine Comedy",
+    "schema:author": {
+        "@type": "schema:Person",
+        "@id": "mydomain:A10005",
+        "schema:givenName": "Mike",
+        "schema:familyName": "Carey",
+        "schema:address": "Qu, Aus",
+        "schema:email": "MCrey@gmail.com"
+    },
+    "schema:publisher": {
+        "@type": "schema:Organization",
+        "@id": "mydomain:P0001",
+        "schema:name": "Vertigo",
+        "schema:address": "NY, USA"
+    }
+}

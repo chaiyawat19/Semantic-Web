@@ -1,0 +1,22 @@
+@prefix ns0: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.mydomain.com/1401200095>
+  a <https://schema.org/Book> ;
+  ns0:author <https://www.mydomain.com/A10005> ;
+  ns0:genre "Comics & Graphic"^^xsd:string ;
+  ns0:isbn "1401200095"^^xsd:string ;
+  ns0:name "The Divine Comedy"^^xsd:string ;
+  ns0:publisher <https://www.mydomain.com/P0001> .
+
+<https://www.mydomain.com/A10005>
+  a ns0:Person ;
+  ns0:address "Qu, Aus"^^xsd:string ;
+  ns0:email "MCrey@gmail.com"^^xsd:string ;
+  ns0:familyName "Carey"^^xsd:string ;
+  ns0:givenName "Mike"^^xsd:string .
+
+<https://www.mydomain.com/P0001>
+  a ns0:Organization ;
+  ns0:address "NY, USA"^^xsd:string ;
+  ns0:name "Vertigo"^^xsd:string .

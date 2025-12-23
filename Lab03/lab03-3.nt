@@ -1,0 +1,14 @@
+<https://dbpedia.org/resource/Divine_Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<https://dbpedia.org/resource/Divine_Comedy> <https://schema.org/author> <https://dbpedia.org/resource/Mike_Carey_(writer)> .
+<https://dbpedia.org/resource/Divine_Comedy> <https://schema.org/genre> "Comics & Graphic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Divine_Comedy> <https://schema.org/isbn> "1401200095"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Divine_Comedy> <https://schema.org/name> "The Divine Comedy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Divine_Comedy> <https://schema.org/publisher> <https://dbpedia.org/resource/Vertigo_Comics> .
+<https://dbpedia.org/resource/Mike_Carey_(writer)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<https://dbpedia.org/resource/Mike_Carey_(writer)> <https://schema.org/address> "Qu, Aus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Mike_Carey_(writer)> <https://schema.org/email> "MCrey@gmail.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Mike_Carey_(writer)> <https://schema.org/familyName> "Carey"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Mike_Carey_(writer)> <https://schema.org/givenName> "Mike"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Vertigo_Comics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<https://dbpedia.org/resource/Vertigo_Comics> <https://schema.org/address> "NY, USA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/resource/Vertigo_Comics> <https://schema.org/name> "Vertigo"^^<http://www.w3.org/2001/XMLSchema#string> .

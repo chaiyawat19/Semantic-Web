@@ -1,0 +1,33 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "#Bag-LK01",
+    "name": "CHAFER&KETHE Bag",
+    "image": "bag-CK01.jpg",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2900"
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "298",
+        "priceCurrency": "Baht",
+        "availability": "InStock"
+    },
+    "color": "Black, White",
+    "manufacturer": {
+        "@type":"Organization",
+        "name": "Kimchong Inc."
+    },
+    "material": "PU leather",
+    "model": "Bag-CK01",
+    "size": "9x21x17 cm",
+    "weight": {
+        "@type": "QuantitativeValue",
+        "value": "800",
+        "unitText": "gram"
+    },
+    "description": "Women shoulder bag made from real PU leather",
+    "url": "https://www.koreabag.com"
+}
