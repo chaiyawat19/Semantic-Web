@@ -1,15 +1,28 @@
 {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "hasName": "ร้านอาหารไทยรุ่งเรือง (Rung Reung Thai Cuisine)",
+    "name": "ร้านอาหารไทยรุ่งเรือง (Rung Reung Thai Cuisine)",
     "image": "https://example.com/photos/1x1/photo.jpg",
-    "hasUrl": "https://example.com",
+    "url": "https://example.com",
     "telephone": "+6621234567",
     "priceRange": "100-300Bht",
     "menu": {
         "@type": "Menu",
-        "hasUrl": "https://example.com/menu"
+        "url": "https://example.com/menu"
     },
     "servesCuisine": "Thai",
-    "reservations": "True"
+    "acceptsReservations": true,
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 ถนนสุขุมวิท",
+        "addressLocality": "เขตวัฒนา",
+        "addressRegion": "กรุงเทพมหานคร",
+        "postalCode": "10110",
+        "addressCountry": "TH"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "13.736717",
+        "longitude": "100.55928"
+    }
 }
