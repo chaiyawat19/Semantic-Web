@@ -24,5 +24,23 @@
         "@type": "GeoCoordinates",
         "latitude": "13.736717",
         "longitude": "100.55928"
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "opens": "11:00",
+        "closes": "22:00"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "120"
     }
 }
