@@ -1,12 +1,13 @@
-@prefix ns0: <https://www.perceive.net/schemas/20031015/relationship/> .
-@prefix ns1: <https://schema.org/> .
+@prefix p: <https://www.person.com/> .
+@prefix sch: <https://schema.org/> .
+@prefix dbp: <https://dbpedia.org/resource/> .
 
-<https://www.person.com/Mary>
-  a <https://schema.org/Person> ;
-  ns0:spouseOf <https://www.person.com/John> .
+p:Mary
+  a sch:Person ;
+  sch:spouseOf p:John .
 
-<https://www.person.com/John>
-  a <https://schema.org/Person> ;
-  ns1:worksFor <https://dbpedia.org/resource/Microsoft> .
+p:John
+  a sch:Person ;
+  sch:worksFor dbp:Microsoft .
 
-<https://dbpedia.org/resource/Microsoft> a <https://dbpedia.org/resource/Public_company> .
+dbp:Microsoft a dbp:Public_company .
