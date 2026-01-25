@@ -1,0 +1,23 @@
+@prefix : <http://www.libraryresource.org/> .
+@prefix sc: <https://schema.org/> .
+@prefix dc:<http://purl.org/metadata/dublin-core#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:IMG001;
+    dc:title "Eiffel Tower";
+    dc:description "This picture was created by Robert Lee. The
+created date was April 10, 2000.";
+    dc:creator :Au1001;
+    sc:encodingFormat "jpeg";
+    sc:size "28kb";
+    sc:width "300"^^xsd:decimal;
+    sc:height "200"^^xsd:decimal .
+    
+:Au1001;
+    sc:givenName "Robert";
+    sc:familyName "Lee";
+    sc:email "robert@gmail.com" .
+    
