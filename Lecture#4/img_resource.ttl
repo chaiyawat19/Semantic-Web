@@ -6,7 +6,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-:IMG001;
+:IMG001
     dc:title "Eiffel Tower";
     dc:description "This picture was created by Robert Lee. The
 created date was April 10, 2000.";
@@ -16,7 +16,7 @@ created date was April 10, 2000.";
     sc:width "300"^^xsd:decimal;
     sc:height "200"^^xsd:decimal .
     
-:Au1001;
+:Au1001
     sc:givenName "Robert";
     sc:familyName "Lee";
     sc:email "robert@gmail.com" .

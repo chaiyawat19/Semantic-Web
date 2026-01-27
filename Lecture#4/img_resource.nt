@@ -1,0 +1,10 @@
+<http://www.libraryresource.org/IMG001> <http://purl.org/metadata/dublin-core#title> "Eiffel Tower" .
+<http://www.libraryresource.org/IMG001> <http://purl.org/metadata/dublin-core#description> "This picture was created by Robert Lee. The\r\ncreated date was April 10, 2000." .
+<http://www.libraryresource.org/IMG001> <http://purl.org/metadata/dublin-core#creator> <http://www.libraryresource.org/Au1001> .
+<http://www.libraryresource.org/IMG001> <https://schema.org/encodingFormat> "jpeg" .
+<http://www.libraryresource.org/IMG001> <https://schema.org/size> "28kb" .
+<http://www.libraryresource.org/IMG001> <https://schema.org/width> "300"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.libraryresource.org/IMG001> <https://schema.org/height> "200"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.libraryresource.org/Au1001> <https://schema.org/givenName> "Robert" .
+<http://www.libraryresource.org/Au1001> <https://schema.org/familyName> "Lee" .
+<http://www.libraryresource.org/Au1001> <https://schema.org/email> "robert@gmail.com" .

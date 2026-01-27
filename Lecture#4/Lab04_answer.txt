@@ -1,0 +1,6 @@
+จากข้อ 2 ถ้า Instance ที่ชื่อว่า “IMG001” และ “A1001” ไม่มีการกําหนด Properties “typeOf”
+กราฟความรู้สามารถตอบได้หรือไม่ว่า “IMG001” และ “A1001” เป็น instances ของ classes
+อะไรบ้าง? และเพราะเหตุผลใด?
+
+IMG001 จะรู้ว่าอยู่ใน Class Image ดูจาก Properties sc:width, sc:height ที่มี domain เป็น Image จึงอนุมานได้ว่าเป็น Class Image
+A1001 จะรู้ว่าอยู่ใน Class MediaDesigner ดูจาก Properties dc:creator ที่มี range เป็น MediaDesigner หาก Instance ไม่ได้บอก Type ก็จะสามารถดูได้จาก range ขอ dc:creator ได้จึงอนุมานได้ว่าเป็น MediaDesigner เสมอ
