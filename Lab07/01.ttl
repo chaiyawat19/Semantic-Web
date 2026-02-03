@@ -1,0 +1,40 @@
+@base <http://example.org/univ#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Classes
+<Subject> rdf:type owl:Class .
+<AcademicStaff> rdf:type owl:Class .
+<Professor> rdf:type owl:Class ; rdfs:subClassOf <AcademicStaff> .
+<AssociateProfessor> rdf:type owl:Class ; rdfs:subClassOf <AcademicStaff> .
+<AssistantProfessor> rdf:type owl:Class ; rdfs:subClassOf <AcademicStaff> .
+
+<Student> rdf:type owl:Class .
+<UnderGraduateStudent> rdf:type owl:Class ; rdfs:subClassOf <Student> .
+<GraduateStudent> rdf:type owl:Class ; rdfs:subClassOf <Student> .
+
+# Properties
+<relatedTo> rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:domain <Subject> ;
+    rdfs:range <Subject> .
+
+<hasPrerequisite> rdf:type owl:ObjectProperty, owl:TransitiveProperty ;
+    rdfs:domain <Subject> ;
+    rdfs:range <Subject> .
+
+<teaches> rdf:type owl:ObjectProperty ;
+    owl:inverseOf <taughtBy> ;
+    rdfs:domain <AcademicStaff> ;
+    rdfs:range <Subject> .
+
+<taughtBy> rdf:type owl:ObjectProperty ;
+    owl:inverseOf <teaches> .
+
+<supervises> rdf:type owl:ObjectProperty ;
+    owl:inverseOf <supervisedBy> ;
+    rdfs:domain <AcademicStaff> ;
+    rdfs:range <Student> .
+
+<supervisedBy> rdf:type owl:ObjectProperty ;
+    owl:inverseOf <supervises> .
