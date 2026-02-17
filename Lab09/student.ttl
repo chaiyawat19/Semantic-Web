@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://example.org/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Student a owl:Class .
+ex:Athlete a owl:Class .
+
+# นิยามคลาส StudentAthlete
+ex:StudentAthlete a owl:Class;
+    owl:intersectionOf( ex:Student ex:Athlete ) .
+
+#==> นิยาม Property
+ex:hasGPA a owl:DatatypeProperty;
+    rdfs:domain ex:Student;
+    rdfs:range xsd:decimal .
+
+#==> นิยาม Anonymous Class
+_:x1 a owl:Restriction;
+    owl:onProperty ex:hasGPA; 
+    owl:someValuesFrom
+    [ a owl:DataRange;
+        owl:onDatatype xsd:decimal;
+        owl:withRestrictions ( [xsd:minInclusive 3.5] [xsd:maxInclusive 4.0] )
+    ].
+
+#==> นิยาม Honor Student
+ex:HonorStudent a owl:Class;
+    owl:intersectionOf( ex:StudentAthlete _:x1) .
+
+ex:HonorStudentAthlete a owl:Class;
+    owl:intersectionOf( ex:HonorStudent ex:StudentAthlete ) .
+
+ex:John a ex:Student;
+    ex:hasGPA "2.0"^^xsd:decimal .
+
+ex:Mary a ex:Student;
+    ex:hasGPA "3.5"^^xsd:decimal .
+
+ex:Smith a ex:Student;
+    ex:hasGPA "3.8"^^xsd:decimal .
+
+ex:Bobby a ex:Student;
+    ex:hasGPA "4.0"^^xsd:decimal .
+
+ex:Robert a ex:Athlete .
+ex:John a ex:Athlete .
+ex:Mary a ex:Athlete .
+ex:Smith a ex:Athlete .
